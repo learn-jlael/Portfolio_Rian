@@ -18,7 +18,7 @@ if(navClose){
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav-link')
 
 const linkAction = () =>{
     const navMenu = document.getElementById('nav-menu')
@@ -64,7 +64,7 @@ const scrollActive = () =>{
         const sectionHeight = current.offsetHeight,
               sectionTop = current.offsetTop - 58,
               sectionId = current.getAttribute('id')
-              sectionClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+              sectionClass = document.querySelector('.nav-menu a[href*=' + sectionId + ']')
 
         if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
             sectionClass.classList.add('active-link')
@@ -109,6 +109,6 @@ const sr = ScrollReveal({
     reset: true
 })
 
-sr.reveal('.home__perfil, .about__image, .contact__mail', {origin: 'right'})
-sr.reveal('.home__name, .home__info, .about__container .section__title-1, .about__info, .contact__social, .contact__data', {origin: 'left'})
-sr.reveal('.services__card, .projects__card', {interval: 100})
+sr.reveal('.home-perfil, .about-image, .contact-mail', {origin: 'right'})
+sr.reveal('.home-name, .home-info, .about-container .section-title-1, .about-info, .contact-social, .contact-data', {origin: 'left'})
+sr.reveal('.services-card, .projects-card', {interval: 100})
